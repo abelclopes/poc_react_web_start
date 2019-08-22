@@ -1,48 +1,35 @@
 
 import React from "react";
-import { Card, Col, Row, Button} from "react-bootstrap";
+import HomeCard from "./card";
+import axios from 'axios';
+import { Row } from "react-bootstrap";
 
-export default function HomeCards() {
-    return (
-        <Row style={{ margin: '50px 0px' }}>
-            <Col md={{ span: 4}}>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ....
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-            </Col>
+class HomeCards extends React.Component {
 
-            <Col md={{ span: 4}}>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ....
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-            </Col>
 
-            <Col md={{ span: 4}}>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ....
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-            </Col>
+    state = {
+        posts: []
+    }
+
+    componentDidMount() {
+        axios.get(`http://127.0.0.1:5000/api/posts`)
+        .then(res => {
+            const posts = res.data;
+            this.setState({ posts });
+        })
+    }
+
+    render() {
+        return <Row style={{ margin: '50px 0px' }}>
+           {
+                this.state.posts.map( post =>(
+                        <HomeCard key={post.id} post={post} />
+                    )
+                )
+            }
         </Row>
-    );
+    }
 }
 
 
-
+export default HomeCards;

@@ -1,0 +1,14 @@
+/home/abel/projetos/listagemProdutos/api/bin/Debug/netcoreapp2.2/api.deps.json
+/home/abel/projetos/listagemProdutos/api/bin/Debug/netcoreapp2.2/api.runtimeconfig.json
+/home/abel/projetos/listagemProdutos/api/bin/Debug/netcoreapp2.2/api.runtimeconfig.dev.json
+/home/abel/projetos/listagemProdutos/api/bin/Debug/netcoreapp2.2/api.dll
+/home/abel/projetos/listagemProdutos/api/bin/Debug/netcoreapp2.2/api.pdb
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.csprojAssemblyReference.cache
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.csproj.CoreCompileInputs.cache
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.RazorAssemblyInfo.cache
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.RazorAssemblyInfo.cs
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.AssemblyInfoInputs.cache
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.AssemblyInfo.cs
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.RazorTargetAssemblyInfo.cache
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.dll
+/home/abel/projetos/listagemProdutos/api/obj/Debug/netcoreapp2.2/api.pdb
